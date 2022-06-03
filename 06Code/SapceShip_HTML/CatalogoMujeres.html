@@ -12,29 +12,39 @@
 				background-attachment: fixed;  
 				background-size: cover;
 			}
-			table {
-			  border-collapse: collapse;
-			  width: 150%;
+			table, tr, td{
+			border: 1px solid black;
+			}
+			tr, td{
+				text-align:center;
+				padding: 15px;
+			}
+			table#tabladeestudaintes{
+				background-color:#CCC1D4;
+				width: 75%;
+			}
+			th{
+				text-align:center;
+				background-color:#FFFFFF;
 			}
 
-			th {
-			  border-bottom: 1px solid #ddd;
-			}
+
 		</style>
 	</head>
 	
 	<body>
 		<center>
-		<table style="width:50%;">
-			<tr>
+
 				<img src="logo\logoSS.jpeg" alt="Space-Ship" 
 				style="float:left;width:145px;height:155px;">
 				<br>
-				<th><a href="CatalogoNinas.html" style="font-size:130%;font-family:Comic Sans MS;color:white;">Ni&ntilde;as</a></th>
-				<th><a href="CatalogoNinos.html" style="font-size:130%;font-family:Comic Sans MS;color:white;">Ni&ntilde;os</a></th>
-				<th><a href="CatalogoHombres.html" style="font-size:130%;font-family:Comic Sans MS;color:white;">Hombres</a></th>
-			</tr>
-		</table>
+				<font size="6">
+				<font face="Comic Sans MS">
+					<a style="color: White;" href="CatalogoNinas.html">|Niñas|</a>
+					<a style="color: White;" href="CatalogoNinos.html">|Niños|</a>
+					<a style="color: White;" href="CatalogoHombres.html">|Hombres|</a>
+				</font>
+				</font>	
 		<br>
 		<br>
 		<br>
@@ -42,19 +52,65 @@
 		<br>
 		<br>
 		<br>
-		<table style="width:57%;">
-			<tr>
-				<td style="font-family:Comic Sans MS;color:white;"><p>Botas para Damas</p></td>
-				<td><img src="img\modelo14.jpg" 
-				alt="Catalogo Mujeres" 
-				style="width:200px;height:200px;"></td>
-				<td><img src="img\modelo15.jpg" 
-				alt="Catalogo Mujeres" 
-				style="width:200px;height:200px;"></td>
-				<td><img src="img\modelo16.jpg" 
-				alt="Catalogo Mujeres" 
-				style="width:200px;height:200px;"></td>
-			</tr>
+		<table id="tabladeestudaintes">
+		<tr>
+		<th> Picture </th>
+		<th> Info </th>
+		</tr>
+		<tr>
+		<td>
+		<a href="FormaCompra.html"><<img src="img\brosa.jpeg" style="width:300px;height:400px;">
+		</td>
+		<td>
+		<br />
+		<b>Modelo:</b> Botines de gamusa 
+		<br />
+		<br />
+		<b>Color:</b> Palo de rosa
+		<br />
+		<br />
+		<b>Tallas:</b> 34-39
+		<br />
+		<br />
+		<b>Precio:</b> 23$ incluido iva
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="FormaCompra.html"><<img src="img\bnegro.jpeg" style="width:300px;height:400px;">
+		</td>
+		<td>
+		<br />
+		<b>Modelo:</b> Botines de cuerina
+		<br />
+		<br />
+		<b>Color:</b> Negro
+		<br />
+		<br />
+		<b>Tallas:</b> 34-39
+		<br />
+		<br />
+		<b>Precio:</b> 25$ incluido iva
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="FormaCompra.html"><<img src="img\bcafe.jpeg" style="width:300px;height:400px;">
+		</td>
+		<td>
+		<br />
+		<b>Modelo:</b> Botines
+		<br />
+		<br />
+		<b>Color:</b> Cafe
+		<br />
+		<br />
+		<b>Tallas:</b> 35-40
+		<br />
+		<br />
+		<b>Precio:</b> 20$ incluido iva
+		</td>
+		</tr>
 		</table>
 		</center>
 		<a href="ProjectSpaceShip.html" style="font-size:130%;">Inicio</a>

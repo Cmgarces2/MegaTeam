@@ -12,28 +12,35 @@
 				background-attachment: fixed;  
 				background-size: cover;
 			}
-			table {
-			  border-collapse: collapse;
-			  width: 150%;
+			table, tr, td{
+			border: 1px solid black;
 			}
-
-			th {
-			  border-bottom: 1px solid #ddd;
+			tr, td{
+				text-align:center;
+				padding: 15px;
+			}
+			table#tabladeestudaintes{
+				background-color:#CCC1D4;
+				width: 75%;
+			}
+			th{
+				text-align:center;
+				background-color:#FFFFFF;
 			}
 		</style>
 	</head>
 	<body>
 		<center>
-		<table style="width:50%;">
-			<tr>
 				<img src="logo\logoSS.jpeg" alt="Space-Ship" 
 				style="float:left;width:145px;height:155px;">
 				<br>
-				<th><a href="CatalogoNinos.html" style="font-size:130%;font-family:Comic Sans MS;color:white;">Ni&ntilde;os</a></th>
-				<th><a href="CatalogoMujeres.html" style="font-size:130%;font-family:Comic Sans MS;color:white;">Mujeres</a></th>
-				<th><a href="CatalogoHombres.html" style="font-size:130%;font-family:Comic Sans MS;color:white;">Hombres</a></th>
-			</tr>
-		</table>
+				<font size="6">
+				<font face="Comic Sans MS">
+					<a style="color: White;" href="CatalogoNinos.html">|Niños|</a>
+					<a style="color: White;" href="CatalogoMujeres.html">|Mujeres|</a>
+					<a style="color: White;" href="CatalogoHombres.html">|Hombres|</a>
+				</font>
+				</font>	
 		<br>
 		<br>
 		<br>
@@ -41,16 +48,65 @@
 		<br>
 		<br>
 		<br>
-		<table style="width:41%;">
-			<tr>
-				<td style="font-family:Comic Sans MS;color:white;"><p>Bailarina para niñas</p><p>Talla 21-26</p><p>Precio 18.00$</p></td>
-				<td><img src="img\modelo1.jpeg" 
-				alt="Facebook" 
-				style="width:200px;height:200px;"></td>
-				<td><img src="img\modelo2.jpeg" 
-				alt="Facebook" 
-				style="width:200px;height:200px;"></td>
-			</tr>
+		<table id="tabladeestudaintes">
+		<tr>
+		<th> Picture </th>
+		<th> Info </th>
+		</tr>
+		<tr>
+		<td>
+		<a href="FormaCompra.html"><<img src="img\modelo2.jpeg" style="width:300px;height:400px;">
+		</td>
+		<td>
+		<br />
+		<b>Modelo:</b> Bailarinas
+		<br />
+		<br />
+		<b>Color:</b> Rojo
+		<br />
+		<br />
+		<b>Talla:</b> 21-33
+		<br />
+		<br />
+		<b>Precio:</b> 18$ incluido iva
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="FormaCompra.html"><<img src="img\modelo4.jpeg" style="width:300px;height:400px;">
+		</td>
+		<td>
+		<br />
+		<b>Modelo:</b> Bailarinas
+		<br />
+		<br />
+		<b>Color:</b> Palo de rosa
+		<br />
+		<br />
+		<b>Talla:</b> 33
+		<br />
+		<br />
+		<b>Precio:</b> 18$ incluido iva
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<a href="FormaCompra.html"><<img src="img\modelo3.jpeg" style="width:300px;height:400px;">
+		</td>
+		<td>
+		<br />
+		<b>Modelo:</b> Bailarinas
+		<br />
+		<br />
+		<b>Color:</b> Negro
+		<br />
+		<br />
+		<b>Talla:</b> 21-33
+		<br />
+		<br />
+		<b>Precio:</b> 12$ incluido iva
+		</td>
+		</tr>
 		</table>
 		</center>
 		<a href="ProjectSpaceShip.html" style="font-size:130%;">Inicio</a>
