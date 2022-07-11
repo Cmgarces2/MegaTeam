@@ -1,68 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="Styles/Styles.css" rel="stylesheet" type="text/css"/>
-    <title>Login</title>
-</head>
-<body>
-	<section class="loginform">
-    	<form>
-			<table>
-				<tr>
-				<td>
-					<img class="logoizquierda" src="./logo/logo.png" alt="">
-				</td>
-				<th>
-					Space-Ship login
-				</th>
-				<td>
-					<img class="logoderecha" src="./logo/logo3.png" alt="">
-				</td>
-				</tr>
-					
-			</table>
-			<table>
-				<tr>
-				<td>
-					<label for="username">Usuario:</label>
-				</td>
-				<td>
-					<input class="controlsloginf" type="text" id="username" name="username">
-				</td>
-				</tr>
-				<tr>
-				<td>
-					<label for="pwd">Contrase&ntilde;a: </label>
-				</td>
-				<td>
-					<input class="controlsloginf" type="password" id="pwd" name="pwd">
-				</td>
-				</tr>
-				<tr>
-				<td colspan="2">
-						<input class="controlsloginf" type="submit" value="Entrar">
-						<input class="controlsloginf" type="reset" value="Cancelar">
-				</td>
-				</tr>			
-			</table>
-			<table>
-				<tr>
-				<td>¿No tienes una cuenta?
-					<a href="Registro.html" >Registrate</a>
-				</td>
-				</tr>
-				<tr>
-					<td>
-						<a class="incioformlog" href="index_home.html">Inicio</a>
-					</td>
-				</tr>					
+<html>
+	<head>
+		<title>Login</title>
+		<style>
+		body {
+			background-image: url('https://marketplace.canva.com/EAD-Ck-LnP0/1/0/1600w/canva-arco%C3%ADris-gradiente-rosa-naranja-y-azul-fondo-virtual-para-zoom-VwJMC37j5jQ.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;  
+			background-size: cover;
+		}
+		</style>
+	</head>
+	<body>
+		<br>
+		<br>
+		<form>
+			<center>
+				<table border="1" width="500"></table> 
+				<table style= table, th, td {border: 1px solid black; border: none;}>				
+					<tr>
+						<center><td><img src="logo\logo.png" width="130" height="130" ></td></center>
+						<th style="font-size:110%;font-family:Comic Sans MS;color:black;"><h1>Space-Ship</h1><br>
+						<h2>Login</h2></th>
+						<center><td><img src="logo\logo3.png" width="130" height="130" ></td></center><br>
+					</tr>					
 				</table>
-        </form>
-		
-	</section>
-    
-</body>
+			</center>
+			<center>
+				<table style="width:34%;" width="200" height="200" border="1">
+			
+					<tr>
+						<td><label for="username">Usuario:</label></td>
+						<td><input type="text" id="username" name="username"></td>
+					</tr>
+					
+					<tr>						<td><label for="pwd">Contrase&ntilde;a: </label></td>
+						<td><input type="password" id="pwd" name="pwd"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><center>
+							<input type="submit" value="Entrar">
+							<input type="reset" value="Cancelar">
+						</input></center></td>
+					</tr>			
+				</table>
+				<br>
+				<table style="width:34%;" width="70" height="70" border="1">				
+					<tr>
+						<td><center>¿No tienes una cuneta?
+						<a href="Registro.html" style="font-size:105%;font-family:Comic Sans MS;color:black;">Registrate</a></center></td>
+					</tr>					
+				</table>
+			</form>
+		</center>		<a href="ProjectSpaceShip.html" style="font-size:130%;">Inicio</a>
+	</body>
 </html>
