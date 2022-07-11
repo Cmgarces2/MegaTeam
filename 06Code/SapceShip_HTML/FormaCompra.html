@@ -1,46 +1,61 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html>
+	<html>
+		<head>
+			<title>MicroMarket</title>
+		</head>
+			
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="Styles/Styles.css" rel="stylesheet" type="text/css"/>
-    <title>Document</title>
+<title>Employee</title>
+	<style>
+    
+	  body {
+			background-image: url('https://marketplace.canva.com/EAD-Ck-LnP0/1/0/1600w/canva-arco%C3%ADris-gradiente-rosa-naranja-y-azul-fondo-virtual-para-zoom-VwJMC37j5jQ.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;  
+			background-size: cover;
+		}
+    
+  </style>
+
 </head>
-<body>
-	<section class="loginform">
-	<table>
-		<tr>
-		<td>
-			<img src="./logo/logo.png" alt="">
-		</td>
-		<th>
-			Space-Ship
-			Formulario de envio
-		</th>
-		<td>
-			<img src="./logo/logo3.png" alt="">
-		</td>
-		</tr>		
-	</table>	
+	<body>
+		<br>
+		<br>
+
+	<center>
+				<table border="1" width="500"></table> 
+				<table style= table, th, td {border: 1px solid black; border: none;}>
+				
+					<tr>
+						<center><td><img src="logo\logo.png" width="130" height="130" ></td></center>
+						<th style="font-size:110%;font-family:Comic Sans MS;color:black;"><h1>Space-Ship</h1><br>
+						<h2>Formulario de envio</h2></th>
+						<center><td><img src="logo\logo3.png" width="130" height="130" ></td></center><br>
+					</tr>
+					
+				</table>
+			</center>
 	<form>
-	<table>
-		<tbody>
+		<center>
+	<table width="200" border="1">
+		  <tbody>
+			
 			<tr>
-			  <td><label for="txtcedula">Cédula:</label></td>
-			  <td><input class="controlsloginf" type="text" id="txtcedula" name="txtcedula"  required maxlength="10" size="10"></td>
+			  <td><label for="txtfullName">Cédula:</label></td>
+			  <td><input type="text" id="txtfullName" name="txtfullName"  required maxlength="10" size="10"></td>
 			</tr>
 			<tr>
-				<td><label for="txtName">Nombres y Apellidos:</label></td>
-				<td><input class="controlsloginf" type="text" id="txtName" name="txtName" size="9" required=""></td>
+				<td><label for="txtId">Nombres y Apellidos:</label></td>
+				<td><input type="text" id="txtId" name="txtId" size="9" required=""></td>
 			  </tr>
 			<tr>
                 <td><label for="txtPhonenumber">Celular:</label></td>
-                <td><input class="controlsloginf" type="text" id="txtPhonenumber" name="txtPhonenumber" size="10" required maxlength="10"></td>
+                <td><input type="text" id="txtPhonenumber" name="txtPhonenumber" size="10" required maxlength="10"></td>
 			</tr>
 			<tr>
-				<td><label for="txtMail">Correo Electronico:</label></td>
-				<td><input class="controlsloginf" type="text" id="txtMail" name="txtMail" size="9" required=""></td>
+				<td><label for="txtId">Correo Electronico:</label></td>
+				<td><input type="text" id="txtId" name="txtId" size="9" required=""></td>
 			  </tr>
 				  <tr>
 					<td><label for="cmbProvince">Provincia:</label></td>
@@ -73,36 +88,32 @@
 					</tr>
 					<tr>
 						<td>
-							<label for="precise">Dirección:</label>
+							<label for="txtFullExperience">Dirección:</label>
 							</td>
 							<td>
-							<label for="precise"></label>
+						  </label>
+							<label for="precise">
 							<textarea name="precise" id="precise" cols="20" rows="2">
 							</textarea>
 						</td>
 			<tr>
-			  <td>Metodo de pago:
-			  </td>
-			  <td><input class="controlsloginf" type="radio" id="cash">
-			  	<label for="cash">Efectivo</label>
-			  <input class="controlsloginf" type="radio" id="card" >
-			  	<label for="card">Tarjeta</label></td>
+			  <p><td>Metodo de pago:
+			  </td></p>
+			  <p><td><input type="radio" id="cash">
+			  	<label for="cash">Efectivo</label></p>
+			  <p><input type="radio" id="card" >
+			  	<label for="card">Tarjeta</label></td></p>
 			</tr>
 			<tr>
-				<td colspan="2">
-							<input class="controlsloginf" type="submit" value="Entrar">
-							<input class="controlsloginf" type="reset" value="Cancelar">
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<a class="incioformlog" href="index_home.html">Inicio</a>
-				</td>
+				<td colspan="2"><center>
+							<input type="submit" value="Entrar">
+							<input type="reset" value="Cancelar">
+						</input></center></td>
 			</tr>
 		  </tbody>
-	</table>
-</form>
-</section>
-</body>
+	</table></center></form>
 
+
+</body>
+<a href="ProjectSpaceShip.html" style="font-size:130%;">Inicio</a>
 </html>
