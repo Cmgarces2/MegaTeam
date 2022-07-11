@@ -1,0 +1,164 @@
+* {
+	margin:0;
+	padding:0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Comic Sans MS';
+    font-size: 120%;
+}
+
+header nav {
+    align-items: center;
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+	background:#c29cd4;
+}
+
+.menu_bar {
+	display:none;
+}
+
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+
+header nav ul li {
+	float:left;
+}
+
+header nav ul li a {
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+
+header nav ul li i {
+	margin-right:10px;
+}
+
+header nav ul li a:hover {
+	background:#df63df;
+}
+
+.loging{ 
+    overflow:hidden;
+	list-style:none; 
+	background:#c29cd4;
+}
+
+.loging li{ 
+	float:right;
+}
+
+.loging li a{ 
+	color:#fff;
+	padding:8px;
+	display:block;
+	text-decoration:none;
+}
+
+.loging li i{ 
+	margin-right:10px;
+}
+
+.logo{
+    display: flex;
+    height: 10rem;
+    width: auto;
+    border-radius: 25px;
+    margin-top: 8px;
+    margin:8px;
+}   
+
+.sec_text{
+    font-size:110%;
+    font-family:Comic Sans MS;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+section table tr td img{
+    height: 20rem;
+    border-radius: 25px;
+    width: auto;
+    margin-left: 14px;
+    margin-bottom: 20px;
+}
+
+footer{
+    background: #c29cd4;
+}
+
+.foo_end img{
+    float:left;
+    width:50px;
+    height:50px; 
+    border-radius: 25px;
+}
+
+footer p{
+    font-size:110%;
+    font-family:Comic Sans MS;
+}
+
+
+
+@media screen and (max-width:800px ) {
+    
+    header nav {
+        width:80%;
+        height:100%;
+        left:-100%;
+        margin:0;
+        clip-path: circle(0 at center);
+    } 
+
+    #check{
+        display: none;
+    }
+
+ 
+    header {
+        flex-direction: column;
+        margin: 0;
+    }
+
+	header nav ul li {
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+    
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+
+	.menu_bar .bar_btn {
+		display:block;
+		padding:20px;
+        background:#c29cd4;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+
+	.menu_bar label i {
+		float:right;
+		font-size:40px;
+	}
+
+    .nav_input:checked + header nav ul li i{ 
+        clip-path: circle(100% at center);
+    }
+}
