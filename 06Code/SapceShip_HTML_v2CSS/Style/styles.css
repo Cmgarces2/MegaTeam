@@ -131,6 +131,7 @@ footer{
 
 .page_footer .group1 .box a img{
     width: 250px;
+    border-radius: 10px;
 }
 
 .page_footer .group1 .red-social a img{
