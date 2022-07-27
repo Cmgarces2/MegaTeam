@@ -2,6 +2,7 @@
 	margin:0;
 	padding:0;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -12,7 +13,7 @@ header {
 
 header nav {
     align-items: center;
-	width:90%;
+	width:45%;
 	max-width:1000px;
 	margin:20px auto;
 	background:#c29cd4;
