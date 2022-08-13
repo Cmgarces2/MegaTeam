@@ -5,7 +5,6 @@
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-family: 'Comic Sans MS';
     font-size: 120%;
@@ -85,12 +84,14 @@ header nav ul li a:hover {
     margin-bottom: 15px;
 }
 
+section table{
+    margin: auto;
+}
+
 section table tr td img{
     height: 20rem;
     border-radius: 25px;
-    width: auto;
-    margin-left: 14px;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 footer{
@@ -149,23 +150,26 @@ footer{
 }
 
 
-@media screen and (max-width:800px ) {
+@media screen and (max-width:980px ) {
     
+    header {
+        display: block;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
     header nav {
         width:80%;
         height:100%;
         left:-100%;
         margin:0;
     } 
-
-    #check{
-        display: none;
-    }
-
  
     header {
         flex-direction: column;
-        margin: 0;
+        margin-bottom: 20px;
     }
 
 	header nav ul li {
@@ -192,14 +196,10 @@ footer{
 		box-sizing:border-box;
 	}
 
-	.menu_bar label i {
+	.menu_bar i {
 		float:right;
 		font-size:40px;
 	}
-
-    .nav_input:checked + header nav ul li i{ 
-        clip-path: circle(100% at center);
-    }
 
 	.page_footer .group1{
         width: 90%;
