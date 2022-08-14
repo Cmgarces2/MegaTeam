@@ -1,19 +1,22 @@
 $(document).ready(main);
 
-var contador = 0;
+var contador = 1;
 
 function main(){
 	$('.menu_bar').click(function(){
-        if(contador == 0){
-			$('nav').toggle({
-				left: '1'
+		
+		if(contador == 1){
+			$('nav').animate({
+				left: '0'
 			});
-			contador = 1;
-		} else {
 			contador = 0;
-			$('nav').toggle({
+		} else {
+			contador = 1;
+			$('nav').animate({
 				left: '-100%'
 			});
 		}
+
 	});
+
 };
