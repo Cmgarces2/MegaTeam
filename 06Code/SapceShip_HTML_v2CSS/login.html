@@ -6,6 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="Js/login.js"></script>
 	<title>Login</title>
 </head>
 
@@ -32,7 +35,7 @@
 						<label for="username">Usuario:</label>
 					</td>
 					<td>
-						<input class="controlsloginf" type="text" id="username" name="username">
+						<input class="controlsloginf" type="text" id="usr" name="usr" placeholder="Usuario" onblur="validateUser()">
 					</td>
 				</tr>
 				<tr>
@@ -40,12 +43,12 @@
 						<label for="pwd">Contrase&ntilde;a: </label>
 					</td>
 					<td>
-						<input class="controlsloginf" type="password" id="pwd" name="pwd">
+						<input class="controlsloginf" type="password" id="pwd" name="pwd" placeholder="Contraseña" onblur = "">
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2">
-						<input class="controlsloginf" type="submit" value="Entrar">
+						<input class="controlsloginf" type="button" value="Entrar" id="enter" onclick=loging()>
 						<input class="controlsloginf" type="reset" value="Cancelar">
 					</td>
 				</tr>
