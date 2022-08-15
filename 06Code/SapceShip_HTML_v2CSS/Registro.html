@@ -6,6 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="Js/login.js"></script>
 	<title>Registro</title>
 </head>
 
@@ -29,18 +32,18 @@
 
 		<table>
 			<tr>
-				<td><b><label for="txtCi">C.I. o Pasaporte</label></b></td>
-				<td><input class="controlsloginf" type="text" id="txtCi" name="txtCi" maxlength="10"></td>
+				<td><b><label for="txtCi">Usuario</label></b></td>
+				<td><input class="controlsloginf" type="text" id="usr" name="usr" maxlength="10" onblur="validateUser()"></td>
 			</tr>
 
 			<tr>
 				<td><b><label for="txtName">Nombre completo</label></b></td>
-				<td><input class="controlsloginf" type="text" id="txtName" name="txtName" required></td>
+				<td><input class="controlsloginf" type="text" id="txtName" name="txtName" required onblur="validateFullName()"></td>
 			</tr>
 
 			<tr>
 				<td><b><label for="txtphoneNumber">Celular</label></b></td>
-				<td><input class="controlsloginf" type="text" id="txtphoneNumber" name="txtphoneNumber" maxlength="10">
+				<td><input class="controlsloginf" type="text" id="txtphoneNumber" name="txtphoneNumber" maxlength="10" onblur="validatePhone()">
 				</td>
 			</tr>
 
@@ -51,7 +54,7 @@
 
 			<tr>
 				<td><b><label for="txtPassword">Contraseña</label></b></td>
-				<td><input class="controlsloginf" type="text" id="txtPassword" name="txtPassword" placeholder="***********"></td>
+				<td><input class="controlsloginf" type="text" id="pwd" name="pwd" placeholder="***********" onblur="validatePassword()"></td>
 			</tr>
 
 

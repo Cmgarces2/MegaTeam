@@ -1,6 +1,8 @@
 const expressions = {
 	user: /^[a-zA-Z0-9\_\-]{4,16}$/,
 	password: /^.{4,12}$/,
+    phone: /^.{10}$/,
+    onlyLetters: /^[a-zA-Z\s_\d]{1,30}$/,
 }
 
 function validateUser(){
@@ -16,6 +18,36 @@ function validateUser(){
         return true;
     }
 }
+
+function validatePhone(){
+    var expRegPhone = /^.{10}$/;
+    var UserPhone = document.getElementById("txtphoneNumber");
+    if (!expRegPhone.exec(UserPhone.value)){
+        alert("El numero de telefono debe tener 10 digitos.");
+
+        return false;
+
+    } else{
+    
+        return true;
+    }
+}
+
+function validateFullName(){
+    var expRegFullName = /^[a-zA-Z\s_\d]{1,30}$/;
+    var UserFullName = document.getElementById("txtName");
+    if (!expRegFullName.exec(UserFullName.value)){
+        alert("El nombre solo debe tener caracteres.");
+
+        return false;
+
+    } else{
+    
+        return true;
+    }
+}
+
+
 
 function validatePassword(){
     var expRegName = /^.{4,12}$/;
