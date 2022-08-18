@@ -6,7 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
-	<script src="Js/FormaCompra.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="Js/login.js"></script>
 	<title>Envio</title>
 </head>
 
@@ -31,59 +32,34 @@
 				<tbody>
 					<tr>
 						<td><label for="txtid">Cédula:</label></td>
-						<td><input class="controlsloginf" type="text" id="txtid" name="txtid" required
-								maxlength="10" size="10">
-								<script> function check_cedula( form )
-									{
-									  var cedula = form.cedula.value;
-									  array = cedula.split( "" );
-									  num = array.length;
-									  if ( num == 10 )
-									  {
-										total = 0;
-										digito = (array[9]*1);
-										for( i=0; i < (num-1); i++ ) { mult = 0; if ( ( i%2 ) != 0 ) { total = total + ( array[i] * 1 ); } else { mult = array[i] * 2; if ( mult > 9 )
-											  total = total + ( mult - 9 );
-											else
-											  total = total + mult;
-										  }
-										}
-										decena = total / 10;
-										decena = Math.floor( decena );
-										decena = ( decena + 1 ) * 10;
-										final = ( decena - total );
-										if ( ( final == 10 && digito == 0 ) || ( final == digito ) ) {
-										  alert( "La c\xe9dula ES v\xe1lida!!!" );
-										  return true;
-										}
-										else
-										{
-										  alert( "La c\xe9dula NO es v\xe1lida!!!" );
-										  return false;
-										}
-									  }
-									  else
-									  {
-										alert("La c\xe9dula no puede tener menos de 10 d\xedgitos");
-										return false;
-									  }
-									}</script>
+						<td>
+							<input class="controlsloginf" type="text" id="txtid" name="txtid" required maxlength="10" onkeyup="validateGeneric()">
+							<p id="mensaje-error-txtid" class="input-error">Solo se permite números y maximo son 10 dígitos.</p>
+							<div id="salida"></div>
 						</td>
-								
+
 					</tr>
 					<tr>
 						<td><label for="txtName">Nombres y Apellidos:</label></td>
-						<td><input class="controlsloginf" type="text" id="txtName" name="txtName" size="30" required="">
+						<td>
+							<input class="controlsloginf" type="text" id="txtName" name="txtName" required
+								onkeyup="validateFullName()">
+							<p id="mensaje-error-txtName" class="input-error">Los nombres tiene que ser de 4 a 40 dígitos y solo puede contener letras.</p>
 						</td>
 					</tr>
 					<tr>
 						<td><label for="txtPhonenumber">Celular:</label></td>
-						<td><input class="controlsloginf" type="text" id="txtPhonenumber" name="txtPhonenumber"
-								size="10" required maxlength="10"></td>
+						<td>
+							<input class="controlsloginf" type="text" id="txtphoneNumber" name="txtphoneNumber"
+								maxlength="10" onkeyup="validatePhone()">
+							<p id="mensaje-error-txtphoneNumber" class="input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.</p>
+						</td>
 					</tr>
 					<tr>
 						<td><label for="txtMail">Correo Electronico:</label></td>
-						<td><input class="controlsloginf" type="text" id="txtMail" name="txtMail" size="9" required="">
+						<td>
+							<input class="controlsloginf" type="email" id="txtMail" name="txtMail" required onkeyup="validateEmail()">
+							<p id="mensaje-error-txtMail" class="input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p> 	
 						</td>
 					</tr>
 					<tr>
@@ -120,9 +96,8 @@
 							<label for="precise">Dirección:</label>
 						</td>
 						<td>
-							<label for="precise"></label>
-							<textarea name="precise" id="precise" cols="20" rows="2">
-							</textarea>
+							<input class="controlsloginf" type="text" id="direc" name="direc" onkeyup="validateDirection()">
+							<p id="mensaje-error-direc" class="input-error">La dirección tiene que ser de 4 a 50 dígitos.</p>
 						</td>
 					<tr>
 						<td>Metodo de pago:
@@ -131,15 +106,13 @@
 							<input class="controlsloginf" type="radio" id="Efectivo" name="pago" size="8" value="e">
 							Efectivo
 							</input>
-							<label for="Efectivo">
-							</label>
+							<label for="Efectivo"></label>
 							</br>
 							<a href="./Pago de tarjeta.html"><input class="controlsloginf" type="radio" id="tarjeta"
-									name="pago" size="8" value="t"> tarjeta
+									name="pago" size="8" value="t"> Tarjeta
 								</input>
 							</a>
-							<label for="Tarjeta">
-							</label>
+							<label for="Tarjeta"></label>
 						</td>
 					</tr>
 					<tr>
@@ -158,4 +131,5 @@
 		</form>
 	</section>
 </body>
+
 </html>

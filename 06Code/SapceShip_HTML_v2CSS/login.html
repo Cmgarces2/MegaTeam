@@ -35,7 +35,8 @@
 						<label for="username">Usuario:</label>
 					</td>
 					<td>
-						<input class="controlsloginf" type="text" id="usr" name="usr" placeholder="Usuario" onblur="validateUser()">
+						<input class="controlsloginf" type="text" id="usr" name="usr" maxlength="16" onkeyup="validateUser()">
+						<p id="mensaje-error-usr" class="input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
 					</td>
 				</tr>
 				<tr>
@@ -43,7 +44,8 @@
 						<label for="pwd">Contrase&ntilde;a: </label>
 					</td>
 					<td>
-						<input class="controlsloginf" type="password" id="pwd" name="pwd" placeholder="Contraseña" onblur = "">
+						<input class="controlsloginf" type="password" id="pwd" name="pwd" maxlength="12" placeholder="***********" onkeyup	="validatePassword()">
+						<p id="mensaje-error-pwd" class="input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
 					</td>
 				</tr>
 				<tr>

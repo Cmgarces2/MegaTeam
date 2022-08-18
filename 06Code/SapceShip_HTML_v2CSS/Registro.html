@@ -33,34 +33,49 @@
 		<table>
 			<tr>
 				<td><b><label for="txtCi">Usuario</label></b></td>
-				<td><input class="controlsloginf" type="text" id="usr" name="usr" maxlength="10" onblur="validateUser()"></td>
+				<td>
+					<input class="controlsloginf" type="text" id="usr" name="usr" maxlength="16" onkeyup="validateUser()">
+					<p id="mensaje-error-usr" class="input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+				</td>
 			</tr>
 
 			<tr>
 				<td><b><label for="txtName">Nombre completo</label></b></td>
-				<td><input class="controlsloginf" type="text" id="txtName" name="txtName" required onblur="validateFullName()"></td>
+				<td>
+					<input class="controlsloginf" type="text" id="txtName" name="txtName" required onkeyup="validateFullName()">
+					<p id="mensaje-error-txtName" class="input-error">Los nombres tiene que ser de 4 a 40 dígitos y solo puede contener letras.</p>
+				</td>
 			</tr>
 
 			<tr>
 				<td><b><label for="txtphoneNumber">Celular</label></b></td>
-				<td><input class="controlsloginf" type="text" id="txtphoneNumber" name="txtphoneNumber" maxlength="10" onblur="validatePhone()">
+				<td>
+					<input class="controlsloginf" type="text" id="txtphoneNumber" name="txtphoneNumber" maxlength="10" onkeyup="validatePhone()">
+					<p id="mensaje-error-txtphoneNumber" class="input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.</p>
 				</td>
 			</tr>
 
 			<tr>
 				<td><b><label for="txtMail">E-mail</label></b></td>
-				<td><input class="controlsloginf" type="text" id="txtMail" name="txtMail" required></td>
+				<td>
+					<input class="controlsloginf" type="email" id="txtMail" name="txtMail" required onkeyup="validateEmail()">
+					<p id="mensaje-error-txtMail" class="input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+				</td>
 			</tr>
 
 			<tr>
 				<td><b><label for="txtPassword">Contraseña</label></b></td>
-				<td><input class="controlsloginf" type="text" id="pwd" name="pwd" placeholder="***********" onblur="validatePassword()"></td>
+				<td>
+					<input class="controlsloginf" type="password" id="pwd" name="pwd" maxlength="12" placeholder="***********" onkeyup	="validatePassword()">
+					<p id="mensaje-error-pwd" class="input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+				</td>
 			</tr>
 
-
 			<tr>
-				<td></td>
-				<td><button class="controlsloginf" type="submit">Guardar</button></td>
+				<td colspan="2">
+					<input class="controlsloginf" type="submit" value="Entrar">
+					<input class="controlsloginf" type="reset" value="Cancelar">
+				</td>
 			</tr>
 
 		</table>
