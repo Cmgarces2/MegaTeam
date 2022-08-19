@@ -190,3 +190,50 @@ function loging(){
     }
 
 }
+
+function validateCard() {
+    var expRegCard = /^[0123456789\s]{16}$/;
+    var UserCard = document.getElementById("txtCard");
+    if (!expRegCard.exec(UserCard.value)) {
+        document.querySelector(`#mensaje-error-txtCard`).classList.add('input-error-enabled');
+		document.querySelector(`#txtCard`).classList.add('input-error-border');
+        return false;
+
+    } else {
+        document.querySelector(`#mensaje-error-txtCard`).classList.remove('input-error-enabled');
+		document.querySelector(`#txtCard`).classList.remove('input-error-border');
+
+        return true;
+    }
+}
+
+function validateName() {
+    var expRegName = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$/;
+    var UserName = document.getElementById("txtNombre");
+    if (!expRegName.exec(UserName.value)) {
+        document.querySelector(`#mensaje-error-txtNombre`).classList.add('input-error-enabled');
+		document.querySelector(`#txtNombre`).classList.add('input-error-border');
+        return false;
+
+    } else {
+        document.querySelector(`#mensaje-error-txtNombre`).classList.remove('input-error-enabled');
+		document.querySelector(`#txtNombre`).classList.remove('input-error-border');
+
+        return true;
+    }
+}
+
+function validateCCV() {
+    var expRegCCV = /^[0123456789\s]{3}$/;
+    var UserCCV = document.getElementById("txtCCV");
+    if (!expRegCCV.exec(UserCCV.value)) {        
+        document.querySelector(`#mensaje-error-txtCCV`).classList.add('input-error-enabled');
+		document.querySelector(`#txtCCV`).classList.add('input-error-border');
+        return false;
+
+    } else {
+        document.querySelector(`#mensaje-error-txtCCV`).classList.remove('input-error-enabled');
+		document.querySelector(`#txtCCV`).classList.remove('input-error-border');
+        return true;
+    }
+}

@@ -8,7 +8,7 @@
   <link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="Js/validationCard.js"></script>
+  <script src="Js/login.js"></script>
   <title>Payment with credit/debit card</title>
 </head>
 
@@ -31,14 +31,18 @@
 			</table>
     <form>
       <table width="200" border="1">
-        <tbody>
+        <tbody> 
           <tr>
             <td><label for="inputNumero">Card Number</label></td>
-            <td><input type="text" id="txtCard" maxlength="16" name="txtCard" onblur="validateCard()"></td>
+            <td><input type="text" id="txtCard" maxlength="16" name="txtCard" onkeyup="validateCard()">
+                <p id="mensaje-error-txtCard" class="input-error">"El número de tarjeta debe tener 16 dígitos y sin letras."</p>
+            </td>
           </tr>
           <tr>
             <td><label for="inputNombre">Name</label></td>
-            <td><input type="text" id="txtNombre" maxlength="50" name="txtNombre" onblur="validateFullName()"></td>
+            <td><input type="text" id="txtNombre" maxlength="50" name="txtNombre" onkeyup="validateName()">
+                <p id="mensaje-error-txtNombre" class="input-error">"El nombre solo debe tener caracteres."</p>
+            </td>
           </tr>
           <tr>
             <td><label for="start">Expiration</label></td>
@@ -47,7 +51,9 @@
           </tr>
           <tr>
             <td><label for="inputCCV">CCV</label></td>
-            <td><input type="text" id="txtCCV" name="txtCCV" maxlength="3" onblur="validateCCV()"></td>
+            <td><input type="text" id="txtCCV" name="txtCCV" maxlength="3" onkeyup="validateCCV()">
+                <p id="mensaje-error-txtCCV" class="input-error">"El código CCV debe tener 3 dígitos y sin letras."</p>
+            </td>
           </tr>
           <tr>
             <td></td>
