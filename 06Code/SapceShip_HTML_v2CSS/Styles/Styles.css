@@ -114,22 +114,3 @@ label{
     text-decoration: none;
     cursor: pointer;
 }
-
-
-.input-error {
-	font-size: 10px;
-	margin-bottom: 0;
-    color: red;
-	display: none;
-    padding-bottom: 16px;
-}
-
-.input-error-enabled {
-	display: block;
-}
-
-.input-error-border{
-    outline: none !important;
-    border: 2px solid red;
-}
-

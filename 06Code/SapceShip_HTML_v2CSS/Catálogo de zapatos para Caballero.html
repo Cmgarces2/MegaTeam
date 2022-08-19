@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="Js/menu.js"></script>
-    <title>Catalogo Hombres</title>
+    <title>Catálogo de zapatos para Caballero</title>
 </head>
 
 <body>
@@ -26,16 +26,17 @@
         </div>
 
         <div class="menu_bar">
-            <a href="#" class="bar_btn"><i class="fa-solid fa-bars"></i>Menu</a>
+            <a href="#" class="bar_btn"><i class="fa-solid fa-bars"></i>Menú</a>
         </div>  
 
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                <li><a href="CatalogoNinos.html"><i class="fa-solid fa-child"></i>Niño</a></li>
-                <li><a href="CatalogoNinas.html"><i class="fa-solid fa-child-dress"></i>Niña</a></li>
-                <li><a href="CatalogoHombres.html"><i class="fa-solid fa-person"></i>Hombres</a></li>
-                <li><a href="CatalogoMujeres.html  "><i class="fa-solid fa-person-dress"></i>Mujeres</a></li>
+		<nav>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="Misión y Visión.html"><i class="fa-solid fa-house"></i>Somos</a></li>
+            <ul class="ListaCat">
+                <li><a href="Catálogo de zapatos para Niños.html"><i class="fa-solid fa-child"></i>Zapatos para Niños</a></li>
+                <li><a href="Catálogo de zapatos para Niñas.html"><i class="fa-solid fa-child-dress"></i>Zapatos para Niñas</a></li>
+                <li><a href="Catálogo de zapatos para Caballero.html"><i class="fa-solid fa-person"></i>Zapatos para Caballeros</a></li>
+                <li><a href="Catálogo de zapatos para Dama.html"><i class="fa-solid fa-person-dress"></i>Zapatos para Damas</a></li>
             </ul>
         </nav>
     </header>
@@ -52,9 +53,21 @@
                 </td>
                 <td>
                     <p><b>Modelo:</b> Botas</p>
-                    <p><b>Color:</b> Negro/Griss</p>
-                    <p><b>Tallas:</b> 37-42</p>
-                    <p><b>Precio:</b> 38$ incluido iva</p>
+                    <p><b>Color:</b>
+                    <select name="Color" id="Color">
+                        <option value="n">Negro</option>
+                        <option value="g">Gris</option>
+                    </select></p>
+                    <p><b>Tallas:</b>
+                    <select name="Tallas" id="Tallas">
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                      </select></p>
+                    <p><b>Precio:</b> $38 incluido IVA</p>
                 </td>
             </tr>
 
@@ -64,8 +77,14 @@
                 <td>
                     <p><b>Modelo:</b> Botas de cuerina</p>
                     <p><b>Color:</b> Negro</p>
-                    <p><b>Tallas:</b> 39-43</p>
-                    <p><b>Precio:</b> 40$ incluido iva</p>
+                    <select name="Tallas" id="Tallas">
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                      </select></p>
+                    <p><b>Precio:</b> $40 incluido IVA</p>
                 </td>
             </tr>
         </table>
