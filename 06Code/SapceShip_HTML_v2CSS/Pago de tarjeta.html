@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="Styles/Styles.css" rel="stylesheet" type="text/css"/>
-    <script src="../SapceShip_HTML_v2CSS/Js/validationCard.js"></script>
-    <title>Payment with credit/debit card</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="Js/validationCard.js"></script>
+  <title>Payment with credit/debit card</title>
 </head>
+
 <body>
   <section class="loginform">
-    <center><img src="./logo/logoSS.jpeg" width=150 height=150></center>
-<form>
-    
-<table width="200" border="1">
-      <tbody>
-    <tr>
-		<td><label for="inputNumero">Card Number</label></td>
-		<td><input type="text" id="inputNumero" maxlength="19" name="txtCard" autocomplete="off" onblur="validateCard()"></td>
-	</tr>
-    <tr>	
-		<td><label for="inputNombre">Name</label></td>
-		<td><input type="text" id="inputNombre" maxlength="19" name="txtNombre" autocomplete="off" onblur="validateFullName()"></td>
-	</tr>
-    <tr>
-        <td><label for="start">Expiration</label></td>
-        <td><input type="date" id="start" name="trip-start"
-       value="2018-07-22"
-       min="2018-01-01" max="2030-12-31"></td>
-       </tr>
-    <tr>
-        <td><label for="inputCCV">CCV</label></td>
-		<td><input type="text" id="inputCCV" name="txtCCV" maxlength="3" onblur="validateCCV()"></td>
-    </tr>
-	<tr>
-		<td><input type="submit" value="Send"></td>
-		<td><input type="reset" value="Delete"></td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <p> <a href="index_home.html">  Home</a></p>
-      </td>
-    </tr>
-	
-         </tbody>
-        </table></form>
-		
+		<form>
+			<table>
+				<tr>
+					<td>
+						<img class="logoizquierda" src="./logo/logo.png" alt="">
+					</td>
+					<th>
+						Datos de su tarjeta
+					</th>
+					<td>
+						<img class="logoderecha" src="./logo/logo3.png" alt="">
+					</td>
+				</tr>
+
+			</table>
+    <form>
+      <table width="200" border="1">
+        <tbody>
+          <tr>
+            <td><label for="inputNumero">Card Number</label></td>
+            <td><input type="text" id="txtCard" maxlength="16" name="txtCard" onblur="validateCard()"></td>
+          </tr>
+          <tr>
+            <td><label for="inputNombre">Name</label></td>
+            <td><input type="text" id="txtNombre" maxlength="50" name="txtNombre" onblur="validateFullName()"></td>
+          </tr>
+          <tr>
+            <td><label for="start">Expiration</label></td>
+            <td><input type="date" id="trip-start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2030-12-31">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="inputCCV">CCV</label></td>
+            <td><input type="text" id="txtCCV" name="txtCCV" maxlength="3" onblur="validateCCV()"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit" class="controlsloginf">Guardar</button></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p> <a href="index.html"> Home</a></p>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </form>
+
   </section>
 </body>
+
 </html>
