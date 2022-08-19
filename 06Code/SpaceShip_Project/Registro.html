@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="Js/login.js"></script>
+	<title>Registro</title>
+</head>
+
+<body>
+	<section class="loginform">
+		<table>
+			<tr>
+				<td><img class="logoizquierda" src="./logo/logo.png" alt=""></td>
+				<th>Registro</th>
+				<td><img class="logoderecha" src="./logo/logo3.png" alt=""></td>
+			</tr>
+			<tr>
+
+				<th colspan="3">
+					Registrate y realiza tus compras de una mejor forma
+				</th>
+
+			</tr>
+		</table>
+
+		<form>
+			<table>
+				<tr>
+					<td><b><label for="txtCi">Usuario</label></b></td>
+					<td>
+						<input class="controlsloginf" type="text" id="usr" name="usr" maxlength="16" onkeyup="validateUser()">
+						<p id="mensaje-error-usr" class="input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+					</td>
+				</tr>
+	
+				<tr>
+					<td><b><label for="txtName">Nombre completo</label></b></td>
+					<td>
+						<input class="controlsloginf" type="text" id="txtName" name="txtName" required onkeyup="validateFullName()">
+						<p id="mensaje-error-txtName" class="input-error">Los nombres tiene que ser de 4 a 40 dígitos y solo puede contener letras.</p>
+					</td>
+				</tr>
+	
+				<tr>
+					<td><b><label for="txtphoneNumber">Celular</label></b></td>
+					<td>
+						<input class="controlsloginf" type="text" id="txtphoneNumber" name="txtphoneNumber" maxlength="10" onkeyup="validatePhone()">
+						<p id="mensaje-error-txtphoneNumber" class="input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.</p>
+					</td>
+				</tr>
+	
+				<tr>
+					<td><b><label for="txtMail">E-mail</label></b></td>
+					<td>
+						<input class="controlsloginf" type="email" id="txtMail" name="txtMail" required onkeyup="validateEmail()">
+						<p id="mensaje-error-txtMail" class="input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+					</td>
+				</tr>
+	
+				<tr>
+					<td><b><label for="txtPassword">Contraseña</label></b></td>
+					<td>
+						<input class="controlsloginf" type="password" id="pwd" name="pwd" maxlength="12" placeholder="***********" onkeyup	="validatePassword()">
+						<p id="mensaje-error-pwd" class="input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+					</td>
+				</tr>
+	
+				<tr>
+					<td colspan="2">
+						<button type="submit" class="controlsloginf">Guardar</button>
+						<button type="reset" class="controlsloginf">Cancelar</button>
+					</td>			
+				</tr>
+	
+			</table>
+			<table>
+				<tr>
+					<td>
+						<a class="incioformlog" href="index.html">Inicio</a>
+					</td>
+				</tr>
+			</table>
+		</form>
+		
+	</section>
+</body>
+
+</html>

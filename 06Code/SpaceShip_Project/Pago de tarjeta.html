@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="Js/login.js"></script>
+  <title>Payment with credit/debit card</title>
+</head>
+
+<body>
+  <section class="loginform">
+			<table>
+				<tr>
+					<td>
+						<img class="logoizquierda" src="./logo/logo.png" alt="">
+					</td>
+					<th>
+						Datos de su tarjeta
+					</th>
+					<td>
+						<img class="logoderecha" src="./logo/logo3.png" alt="">
+					</td>
+				</tr>
+
+			</table>
+    <form>
+      <table>
+          <tr>
+            <td><label for="inputNumero">Card Number</label></td>
+            <td><input  class="controlsloginf" type="text" id="txtCard" maxlength="16" name="txtCard" onkeyup="validateCard()">
+                <p id="mensaje-error-txtCard" class="input-error">"El número de tarjeta debe tener 16 dígitos y sin letras."</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="inputNombre">Name</label></td>
+            <td><input class="controlsloginf" type="text" id="txtNombre" maxlength="50" name="txtNombre" onkeyup="validateName()">
+                <p id="mensaje-error-txtNombre" class="input-error">"El nombre solo debe tener caracteres."</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="start">Expiration</label></td>
+            <td><input  class="controlsloginf" type="date" id="trip-start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2030-12-31">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="inputCCV">CCV</label></td>
+            <td><input  class="controlsloginf" type="text" id="txtCCV" name="txtCCV" maxlength="3" onkeyup="validateCCV()">
+                <p id="mensaje-error-txtCCV" class="input-error">"El código CCV debe tener 3 dígitos y sin letras."</p>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit" class="controlsloginf">Guardar</button></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p> <a href="index.html"> Home</a></p>
+            </td>
+          </tr>
+      </table>
+    </form>
+
+  </section>
+</body>
+
+</html>

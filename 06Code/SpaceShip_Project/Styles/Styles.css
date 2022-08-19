@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Comic Sans MS, Helvetica, sans-serif;
+    margin: auto;
+}
+
+img {
+    width: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+table {  
+    width: 75%;  
+    background-color: #ccc1d4;
+    margin: 0% auto;
+    align-content: center;   
+    margin-bottom: 20px;
+}
+
+text {
+    text-align: center;
+}
+
+th, td {
+    text-align: center;
+    background-color: #ccc1d4;
+    border: 1px double;
+}
+
+.titulo {
+    background-color: #ffffff;
+}
+
+.imagenHombres{
+    width: 400px;
+    height: 300px;
+    margin-top: 2%;
+}
+
+.imagenMujeres{
+    width: 300px;
+    height: 400px;
+}
+
+.imagenNinos{
+    width: 300px;
+    height: 400px;
+}
+.imagenNinas{
+    width: 300px;
+    height: 400px;
+}
+
+.textoInfo {
+    text-align: center;
+}
+
+.logoizquierda {
+    width: 130px;
+    height: 130px;
+}
+
+.logoderecha {
+    width: 130px;
+    height: 130px;
+}
+
+.incioformlog {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.loginform table {
+    font-family: 'Comic Sans MS';
+    width: 500px;
+    background: #cfa8e8;
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    
+}
+
+.loginform th {
+    font-size: 22px;
+}
+
+label{
+    font-size: 22px;
+}
+
+.controlsloginf{
+    width: 100%;
+    background: #e8d3f4;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #D15383;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+}
+
+.controlsloginf:hover {
+    color: #D15383;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.input-error {
+	font-size: 10px;
+	margin-bottom: 0;
+    color: red;
+	display: none;
+    padding-bottom: 16px;
+}
+
+.input-error-enabled {
+	display: block;
+}
+
+.input-error-border{
+    outline: none !important;
+    border: 2px solid red;
+}
+

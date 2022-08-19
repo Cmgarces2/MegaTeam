@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="Js/login.js"></script>
+	<title>Envio</title>
+</head>
+
+<body>
+	<section class="loginform">
+		<table>
+			<tr>
+				<td>
+					<img src="./logo/logo.png" alt="">
+				</td>
+				<th>
+					Space-Ship
+					Formulario de envio
+				</th>
+				<td>
+					<img src="./logo/logo3.png" alt="">
+				</td>
+			</tr>
+		</table>
+		<form>
+			<table>
+				<tbody>
+					<tr>
+						<td><label for="txtid">Cédula:</label></td>
+						<td>
+							<input class="controlsloginf" type="text" id="txtid" name="txtid" required maxlength="10" onkeyup="validateGeneric()">
+							<p id="mensaje-error-txtid" class="input-error">Solo se permite números y maximo son 10 dígitos.</p>
+							<div id="salida"></div>
+						</td>
+
+					</tr>
+					<tr>
+						<td><label for="txtName">Nombres y Apellidos:</label></td>
+						<td>
+							<input class="controlsloginf" type="text" id="txtName" name="txtName" required
+								onkeyup="validateFullName()">
+							<p id="mensaje-error-txtName" class="input-error">Los nombres tiene que ser de 4 a 40 dígitos y solo puede contener letras.</p>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="txtPhonenumber">Celular:</label></td>
+						<td>
+							<input class="controlsloginf" type="text" id="txtphoneNumber" name="txtphoneNumber"
+								maxlength="10" onkeyup="validatePhone()">
+							<p id="mensaje-error-txtphoneNumber" class="input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.</p>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="txtMail">Correo Electronico:</label></td>
+						<td>
+							<input class="controlsloginf" type="email" id="txtMail" name="txtMail" required onkeyup="validateEmail()">
+							<p id="mensaje-error-txtMail" class="input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p> 	
+						</td>
+					</tr>
+					<tr>
+						<td><label for="cmbProvince">Provincia:</label></td>
+						<td><select id="cmbProvince" name="cmbProvince">
+								<option value="1">Azuay</option>
+								<option value="2">Cañar</option>
+								<option value="3">Loja</option>
+								<option value="4">Carchi</option>
+								<option value="5">Imbabura</option>
+								<option value="6">Pichincha</option>
+								<option value="7">Cotopaxi</option>
+								<option value="8">Tungurahua</option>
+								<option value="9">Bolívar</option>
+								<option value="10">Chimborazo</option>
+								<option value="11">Sto. Domingo de los Tsachilas</option>
+								<option value="12">Esmeraldas</option>
+								<option value="13">Manabí</option>
+								<option value="14">Guayas</option>
+								<option value="15">Los Ríos</option>
+								<option value="16">El Oro</option>
+								<option value="17">Santa Elena</option>
+								<option value="18">Sucumbíos</option>
+								<option value="19">Napo</option>
+								<option value="20">Pastaza</option>
+								<option value="21">Orellana</option>
+								<option value="22">Morona Santiago</option>
+								<option value="23">Zamora Chinchipe</option>
+								<option value="24">Galápagos</option>
+							</select>
+					</tr>
+					<tr>
+						<td>
+							<label for="precise">Dirección:</label>
+						</td>
+						<td>
+							<input class="controlsloginf" type="text" id="direc" name="direc" onkeyup="validateDirection()">
+							<p id="mensaje-error-direc" class="input-error">La dirección tiene que ser de 4 a 50 dígitos.</p>
+						</td>
+					<tr>
+						<td>Metodo de pago:
+						</td>
+						<td>
+							<input class="controlsloginf" type="radio" id="Efectivo" name="pago" size="8" value="e">
+							Efectivo
+							</input>
+							<label for="Efectivo"></label>
+							</br>
+							<a href="./Pago de tarjeta.html"><input class="controlsloginf" type="radio" id="tarjeta"
+									name="pago" size="8" value="t"> Tarjeta
+								</input>
+							</a>
+							<label for="Tarjeta"></label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input class="controlsloginf" type="submit" value="Entrar">
+							<input class="controlsloginf" type="reset" value="Cancelar">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<a class="incioformlog" href="index.html">Inicio</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</section>
+</body>
+
+</html>
