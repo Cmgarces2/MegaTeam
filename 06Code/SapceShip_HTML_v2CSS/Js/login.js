@@ -3,6 +3,8 @@ const expressions = {
 	password: /^.{4,12}$/,
     phone: /^.{10}$/,
     onlyLetters: /^[a-zA-Z\s_\d]{1,30}$/,
+    Card: /^.{16}$/,
+    CCV: /^.{3}$/,
 }
 
 function validateUser(){
